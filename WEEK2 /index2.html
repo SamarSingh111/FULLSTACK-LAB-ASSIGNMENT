@@ -1,0 +1,118 @@
+<!-- Objective: Create a timetable using HTML and format it as a table.
+Instructions:
+● Utilize the <table> tag to structure the timetable.
+● Add <thead>, <tbody>, and <tfoot> to organize the content. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+</head>
+<body>
+ <h2>Weekly Timetable</h2>
+<style>
+ body {
+ font-family: Arial, sans-serif;
+ margin: 20px;
+ }
+ table {
+ width: 100%;
+ border-collapse: collapse;
+ margin-top: 20px;
+ }
+ th, td {
+ border: 1px solid black;
+ padding: 10px;
+ text-align: center;
+ }
+ th {
+ background-color: wheat;
+ }
+ tfoot {
+ background-color: white;
+ font-weight: bold;
+ }
+ @media (max-width: 600px) {
+ table, thead, tbody, th, td, tfoot {
+ display: block;
+ }
+ th, td {
+ width: 100%;
+ box-sizing: border-box;
+ }
+ thead tr {
+ display: none;
+ }
+ tr {
+ margin-bottom: 15px;
+ border: 1px solid white;
+ }
+ }
+ </style>
+</style>
+<table>
+ <thead>
+ <tr>
+ <th>Time</th>
+ <th>Monday</th>
+ <th>Tuesday</th>
+ <th>Wednesday</th>
+ <th>Thursday</th>
+ <th>Friday</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td>9:00 AM - 10:00 AM</td>
+ <td>Math</td>
+ <td>English</td>
+ <td>Science</td>
+ <td>History</td>
+ <td>Physical Education</td>
+ </tr>
+ <tr>
+ <td>10:00 AM - 11:00 AM</td>
+ <td>Art</td>
+ <td>Math</td>
+ <td>English</td>
+ <td>Science</td>
+ <td>History</td>
+ </tr>
+ <tr>
+ <td>11:00 AM - 12:00 PM</td>
+ <td>Physical Education</td>
+ <td>Art</td>
+ <td>Math</td>
+ <td>English</td>
+ <td>Science</td>
+ </tr>
+ <tr>
+ <td>12:00 PM - 1:00 PM</td>
+ <td colspan="5">Lunch Break</td>
+ </tr>
+ <tr>
+ <td>1:00 PM - 2:00 PM</td>
+ <td>History</td>
+ <td>Physical Education</td>
+ <td>Art</td>
+ <td>Math</td>
+ <td>English</td>
+ </tr>
+ <tr>
+ <td>2:00 PM - 3:00 PM</td>
+ <td>Science</td>
+ <td>History</td>
+ <td>Physical Education</td>
+ <td>Art</td>
+ <td>Math</td>
+ </tr>
+ </tbody>
+ <tfoot>
+ <tr>
+ <td colspan="6">End of Timetable</td>
+ </tr>
+ </tfoot>
+</table>
+</body>
+</html>
