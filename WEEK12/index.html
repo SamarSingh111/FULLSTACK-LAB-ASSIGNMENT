@@ -1,0 +1,43 @@
+//Objective: Generate a user interface for a chessboard using JavaScript, dynamically
+//creating all HTML elements and applying CSS properties through JavaScript.
+//Instructions:
+//● Use loops to dynamically generate the chessboard and manipulate styles.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chessboard</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        #chessboard {
+            display: grid;
+            grid-template-columns: repeat(8, 50px);
+            grid-template-rows: repeat(8, 50px);
+            gap: 0;
+        }
+        .square {
+            width: 50px;
+            height: 50px;
+        }
+        .white {
+            background-color: #ffffff;
+        }
+        .black {
+            background-color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <div id="chessboard"></div>
+    <script src="script.js"></script>
+</body>
+</html>
+
